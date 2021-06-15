@@ -4,9 +4,9 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class ServiceService {
 userurl="http://localhost:3000/users";
-product="http://localhost:3000/products";
+producturl="http://localhost:3000/products";
 send=new BehaviorSubject({});
 collect=<any>this.send.asObservable();
   constructor(private http:HttpClient) { }
@@ -17,7 +17,7 @@ collect=<any>this.send.asObservable();
     return this.http.get(this.userurl);
   }
   getprod(){
-    return this.http.get(this.product);
+    return this.http.get(this.producturl);
   }
   updateuser(id,data){
     return this.http.put(this.userurl+"/"+`${id}`,data);

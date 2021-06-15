@@ -41,7 +41,7 @@
               <td>{{item.name}} </td>
               <td> {{item.price | currency:'INR':true}}</td>
               <td>{{item.brand}}</td>
-              <td> <button (click)="reducequantity(i)"class="btn btn-danger btn-sm">-</button> {{item.quantity}} <button (click)="addquantity(i)"class="btn btn-warning btn-sm">+</button></td>
+              <td> <button (click)="decreasequantity(i)"class="btn btn-danger btn-sm">-</button> {{item.quantity}} <button (click)="addquantity(i)"class="btn btn-warning btn-sm">+</button></td>
             </tr>
           </tbody>
         </table>

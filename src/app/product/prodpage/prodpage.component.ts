@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataService } from 'src/services/data.service';
+import { ServiceService } from 'src/services/service.service';
 
 interface filter2 {
   value: string;
@@ -17,7 +17,7 @@ interface Filter1 {
 })
 export class ProdpageComponent implements OnInit {
   selectedValue: string;
-  constructor(private service:DataService,private router:Router) { }
+  constructor(private service:ServiceService,private router:Router) { }
 public allproducts:any;
 public alllist:any;
 public show:any;
@@ -118,7 +118,7 @@ footwear(){
 this.choosen2="Footwear";
 this.alllist=this.allproducts.footwear;
 }
-Addtocart(id,data)
+addtocart(id,data)
 {
 this.number=true;
     if(!this.currentuser.cart.includes(data)){ 

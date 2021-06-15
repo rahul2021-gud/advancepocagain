@@ -49,102 +49,6 @@
   "products": {
     "all": [
       {
-        "brand": "Oneplus",
-        "name": "Oneplus 9",
-        "img": "assets/images/prod1.jpg",
-        "id": 2,
-        "price": 54900,
-        "quantity": 0
-      },
-      {
-        "brand": "Apple",
-        "name": "Iphone 12",
-        "img": "assets/images/prod2.jpg",
-        "id": 1,
-        "price": 75900,
-        "quantity": 0
-      },
-      {
-        "brand": "Samsung",
-        "name": "Samsung galaxy M11",
-        "img": "assets/images/prod3.jpg",
-        "id": 3,
-        "price": 15900,
-        "quantity": 0
-      },
-      {
-        "brand": "Mi",
-        "name": "Redmi note 10",
-        "img": "assets/images/prod4.jpg",
-        "id": 4,
-        "price": 21900,
-        "quantity": 0
-      },
-      {
-        "brand": "HP",
-        "name": "HP pavillion",
-        "img": "assets/images/prod5.jpg",
-        "id": 5,
-        "price": 80900,
-        "quantity": 0
-      },
-      {
-        "brand": "Lenovo",
-        "name": "Lenovo Ideapad",
-        "img": "assets/images/prod6.jpg",
-        "id": 6,
-        "price": 70900,
-        "quantity": 0
-      },
-      {
-        "brand": "Asus",
-        "name": "Asus zenbook",
-        "img": "assets/images/prod7.jpg",
-        "id": 7,
-        "price": 72900,
-        "quantity": 0
-      },
-      {
-        "brand": "Apple",
-        "name": "Macbook Air",
-        "img": "assets/images/prod8.jpg",
-        "id": 8,
-        "price": 90900,
-        "quantity": 0
-      },
-      {
-        "brand": "Sennheiser",
-        "name": "Sennheiser wireless",
-        "img": "assets/images/prod9.jpg",
-        "id": 9,
-        "price": 14990,
-        "quantity": 0
-      },
-      {
-        "brand": "Sony",
-        "name": "Sony WH-1000XM3",
-        "img": "assets/images/prod10.jpg",
-        "id": 10,
-        "price": 20900,
-        "quantity": 0
-      },
-      {
-        "brand": "Marshall",
-        "name": "Marshall Major-III",
-        "img": "assets/images/prod11.jpg",
-        "id": 11,
-        "quantity": 0,
-        "price": 4999
-      },
-      {
-        "brand": "Bose",
-        "name": "Bose Comfort 35",
-        "img": "assets/images/prod12.jpg",
-        "id": 12,
-        "price": 29900,
-        "quantity": 0
-      },
-      {
         "brand": "Adidas",
         "name": "Men's Regular T-shirt",
         "img": "assets/images/prod13.jpg",
@@ -256,6 +160,103 @@
         "price": 8899,
         "quantity": 0
       },
+      {
+        "brand": "Oneplus",
+        "name": "Oneplus 9",
+        "img": "assets/images/prod1.jpg",
+        "id": 2,
+        "price": 54900,
+        "quantity": 0
+      },
+      {
+        "brand": "Apple",
+        "name": "Iphone 12",
+        "img": "assets/images/prod2.jpg",
+        "id": 1,
+        "price": 75900,
+        "quantity": 0
+      },
+      {
+        "brand": "Samsung",
+        "name": "Samsung galaxy M11",
+        "img": "assets/images/prod3.jpg",
+        "id": 3,
+        "price": 15900,
+        "quantity": 0
+      },
+      {
+        "brand": "Mi",
+        "name": "Redmi note 10",
+        "img": "assets/images/prod4.jpg",
+        "id": 4,
+        "price": 21900,
+        "quantity": 0
+      },
+      {
+        "brand": "HP",
+        "name": "HP pavillion",
+        "img": "assets/images/prod5.jpg",
+        "id": 5,
+        "price": 80900,
+        "quantity": 0
+      },
+      {
+        "brand": "Lenovo",
+        "name": "Lenovo Ideapad",
+        "img": "assets/images/prod6.jpg",
+        "id": 6,
+        "price": 70900,
+        "quantity": 0
+      },
+      {
+        "brand": "Asus",
+        "name": "Asus zenbook",
+        "img": "assets/images/prod7.jpg",
+        "id": 7,
+        "price": 72900,
+        "quantity": 0
+      },
+      {
+        "brand": "Apple",
+        "name": "Macbook Air",
+        "img": "assets/images/prod8.jpg",
+        "id": 8,
+        "price": 90900,
+        "quantity": 0
+      },
+      {
+        "brand": "Sennheiser",
+        "name": "Sennheiser wireless",
+        "img": "assets/images/prod9.jpg",
+        "id": 9,
+        "price": 14990,
+        "quantity": 0
+      },
+      {
+        "brand": "Sony",
+        "name": "Sony WH-1000XM3",
+        "img": "assets/images/prod10.jpg",
+        "id": 10,
+        "price": 20900,
+        "quantity": 0
+      },
+      {
+        "brand": "Marshall",
+        "name": "Marshall Major-III",
+        "img": "assets/images/prod11.jpg",
+        "id": 11,
+        "quantity": 0,
+        "price": 4999
+      },
+      {
+        "brand": "Bose",
+        "name": "Bose Comfort 35",
+        "img": "assets/images/prod12.jpg",
+        "id": 12,
+        "price": 29900,
+        "quantity": 0
+      },
+     
       {
         "brand": "Adidas",
         "name": "running shoes",

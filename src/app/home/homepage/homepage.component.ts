@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataService } from 'src/services/data.service';
+import { ServiceService } from 'src/services/service.service';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { DataService } from 'src/services/data.service';
 })
 export class HomepageComponent implements OnInit {
  public currentuserdata=JSON.parse(localStorage.getItem("currentuser"));
-  constructor(private router:Router,private service :DataService) { }
+  constructor(private router:Router,private service :ServiceService) { }
 public no:any;
 public currentuser:any;
 public number=false;
@@ -37,7 +37,7 @@ public number=false;
     this.router.navigateByUrl('login');
   }
   
-  gotocheckout(){
+  gotocart(){
     
   this.router.navigateByUrl('cart/checkout');
   }

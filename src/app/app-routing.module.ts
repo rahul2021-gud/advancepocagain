@@ -1,7 +1,6 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeGuard } from 'src/guards/home.guard';
-import { CheckoutComponent } from './cart/checkout/checkout.component';
+import { AuthGuard } from 'src/guards/auth.guard';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { PaymentComponent } from './pay/payment/payment.component';
 import { ProdpageComponent } from './product/prodpage/prodpage.component';
@@ -25,23 +24,19 @@ const routes: Routes = [
   {
     path:'homepage',
     component:HomepageComponent
-    ,canActivate:[HomeGuard]
+    ,canActivate:[AuthGuard]
   },
   {
     path:'products',
-    component:ProdpageComponent,canActivate:[HomeGuard]
+    component:ProdpageComponent,canActivate:[AuthGuard]
   },
-  // {
-  //   path:'checkout',
-  //   component:CheckoutComponent
-  // },
   {
    path:'cart',loadChildren:()=>import('./cart/cart.module')
-   .then(mod=>mod.CartModule),canActivate:[HomeGuard]
+   .then(mod=>mod.CartModule),canActivate:[AuthGuard]
   },
 {
     path:'payment',
-    component:PaymentComponent,canActivate:[HomeGuard]
+    component:PaymentComponent,canActivate:[AuthGuard]
   }
 ];
 

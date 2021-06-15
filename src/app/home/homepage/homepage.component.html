@@ -14,10 +14,10 @@
         <h2><a class="nav-link" (click)="gotoproducts()">Products</a></h2>
       </li>
       <li class="nav-item">
-        <h2><a class="nav-link" (click)="gotocheckout()">Cart</a></h2>
+        <h2><a class="nav-link" (click)="gotocart()">Cart</a></h2>
       </li>
       <li class="nav-item my-2 ">
-        <mat-icon *ngIf="number" matBadge="{{no}}" matBadgeColor="warn"></mat-icon><img (click)="gotocheckout()" src="https://image.flaticon.com/icons/png/128/726/726496.png"height="30px"width="30px">
+        <mat-icon *ngIf="number" matBadge="{{no}}" matBadgeColor="warn"></mat-icon><img (click)="gotocart()" src="https://image.flaticon.com/icons/png/128/726/726496.png"height="30px"width="30px">
       </li>
       <li class="nav-item mx-4 mr-1">
         <h2><a class="nav-link " (click)="logout()">Logout</a></h2>

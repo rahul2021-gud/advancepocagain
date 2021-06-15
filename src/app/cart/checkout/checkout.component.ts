@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { DataService } from 'src/services/data.service';
+import { ServiceService } from 'src/services/service.service';
 
 @Component({
   selector: 'app-checkout',
@@ -16,7 +16,7 @@ public no:any;
 public subtotal=0;
 public alluser:any;
 public number=false;
-  constructor(private service:DataService,private router:Router) { }
+  constructor(private service:ServiceService,private router:Router) { }
 
   ngOnInit(): void {
     this.service.getusers().subscribe(data=>{
@@ -41,7 +41,7 @@ public number=false;
 })
 }
 
-reducequantity(index){
+decresequantity(index){
   if(this.cart[index].quantity==1){
     this.cart.splice(index,1);
     this.no=this.cart.length;

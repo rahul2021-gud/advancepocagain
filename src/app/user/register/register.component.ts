@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { DataService } from 'src/services/data.service';
+import { ServiceService } from 'src/services/service.service';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import { Router } from '@angular/router';
@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
   public verifyotp:any;
   public regiform :boolean;
   incorrect=false;
-  constructor(private service:DataService,private router:Router) { }
+  constructor(private service:ServiceService,private router:Router) { }
 
   ngOnInit(): void {
     localStorage.clear();
@@ -38,7 +38,7 @@ registeruser(){
   if(this.register.value.password==this.register.value.cpassword){ 
   this.name=this.register.value.name;
   this.email=this.register.value.email;
-  this.otp=Math.floor((Math.random() * 10000)+1);
+  this.otp= Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
   this.incorrect=false;
   this.regiform=false;
   }else{

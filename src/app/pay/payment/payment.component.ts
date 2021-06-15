@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import{ init } from 'emailjs-com';
-import { DataService } from 'src/services/data.service';
+import { ServiceService } from 'src/services/service.service';
 init("user_38SCnGCclbvkviZ4c4OvJ");
 @Component({
   selector: 'app-payment',
@@ -19,7 +19,7 @@ public name=this.user.name;
 public email=this.user.email;
 public message:any;
 
-  constructor(private router:Router,private service:DataService) { }
+  constructor(private router:Router,private service:ServiceService) { }
 
   ngOnInit(): void {
     let msg="";
