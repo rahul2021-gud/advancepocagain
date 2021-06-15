@@ -8,42 +8,32 @@
       "cpassword": "qwer",
       "cart": [
         {
-          "brand": "Oneplus",
-          "name": "Oneplus 9",
-          "img": "assets/images/prod1.jpg",
-          "id": 2,
-          "price": 54900,
+          "brand": "Adidas",
+          "name": "Men's Regular T-shirt",
+          "img": "assets/images/prod13.jpg",
+          "id": 13,
+          "price": 749,
           "quantity": 1
         },
         {
-          "brand": "Apple",
-          "name": "Iphone 12",
-          "img": "assets/images/prod2.jpg",
-          "id": 1,
-          "price": 75900,
+          "brand": "Allen Solly",
+          "name": "Men's Polo",
+          "img": "assets/images/prod15.jpg",
+          "id": 15,
+          "price": 699,
           "quantity": 1
         },
         {
-          "brand": "Samsung",
-          "name": "Samsung galaxy M11",
-          "img": "assets/images/prod3.jpg",
-          "id": 3,
-          "price": 15900,
+          "brand": "Unionbay",
+          "name": "Men's Cargo",
+          "img": "assets/images/prod17.jpg",
+          "id": 17,
+          "price": 10900,
           "quantity": 1
         }
       ],
       "verified": true,
       "id": 1
-    },
-    {
-      "name": "Rahul Banerjee",
-      "email": "rahulbanerjeesubu@gmail.com",
-      "Id": 12,
-      "password": "qwer",
-      "cpassword": "qwer",
-      "cart": [],
-      "verified": true,
-      "id": 2
     }
   ],
   "products": {
@@ -256,7 +246,6 @@
         "price": 29900,
         "quantity": 0
       },
-     
       {
         "brand": "Adidas",
         "name": "running shoes",

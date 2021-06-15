@@ -67,7 +67,7 @@
     height:360px;
     background-image: linear-gradient(to right, #87cff0, #c9e5f5);
     box-sizing: border-box;
-    box-shadow:1px 5px 6px 3px;
+   
 }
 .example-card img{
     height:150px;

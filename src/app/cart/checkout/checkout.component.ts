@@ -41,7 +41,7 @@ public number=false;
 })
 }
 
-decresequantity(index){
+decreasequantity(index){
   if(this.cart[index].quantity==1){
     this.cart.splice(index,1);
     this.no=this.cart.length;
