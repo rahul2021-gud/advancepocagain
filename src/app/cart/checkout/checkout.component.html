@@ -1,0 +1,60 @@
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <img class="im" src="assets/shop.jpg" width="40px" height="40px">
+  <h1 class="mx-2"><a class="navbar-brand" ><b>OPEN-SHOP</b></a></h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-5">
+    </ul>
+  </div>
+</nav>
+
+<div class="content">
+  <div class="sidepanel">
+    <div class="sidenav">
+      <img class ="t" src="assets/shop.jpg"height="100px"width="100px">
+      <button (click)="home()" class="btn btn-outline-dark">Home </button>
+      <button (click)="gotoproducts()" class="btn btn-outline-dark">Products</button>
+      <button (click)="home()" class="btn btn-outline-dark">About Us</button>
+      <button (click)="logout()" class="btn btn-outline-dark">Log Out</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-l-8">
+        <h1 class="text-center"><b>YOUR-CART</b></h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Brand</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr  *ngFor="let item of cart,let i=index" >
+              <th scope="row"><img src="{{item.img}}"height="120px"width="100px"></th>
+              <td>{{item.name}} </td>
+              <td> {{item.price | currency:'INR':true}}</td>
+              <td>{{item.brand}}</td>
+              <td> <button (click)="reducequantity(i)"class="btn btn-danger btn-sm">-</button> {{item.quantity}} <button (click)="addquantity(i)"class="btn btn-warning btn-sm">+</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4 class=" text-center"><b>Subtotal: {{subtotal | currency:'INR':true}}</b></h4>
+        <div class="text-center">
+          <button (click)="proceedtopay()" class="btn btn-warning btn-lg">Proceed to pay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer text-center">
+  <p>Rahul Banerjee<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</div>
+</body>

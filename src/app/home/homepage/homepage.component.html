@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <img class="im" src="assets/shop.jpg" width="40px" height="40px">
+  <h1 class="mx-2"><a class="navbar-brand" ><b>OPEN-SHOP</b></a></h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-5">
+      <li class="nav-item active">
+        <h2><a class="nav-link" (click)="home()">Home</a></h2>
+      </li>
+      <li class="nav-item">
+        <h2><a class="nav-link" (click)="gotoproducts()">Products</a></h2>
+      </li>
+      <li class="nav-item">
+        <h2><a class="nav-link" (click)="gotocheckout()">Cart</a></h2>
+      </li>
+      <li class="nav-item my-2 ">
+        <mat-icon *ngIf="number" matBadge="{{no}}" matBadgeColor="warn"></mat-icon><img (click)="gotocheckout()" src="https://image.flaticon.com/icons/png/128/726/726496.png"height="30px"width="30px">
+      </li>
+      <li class="nav-item mx-4 mr-1">
+        <h2><a class="nav-link " (click)="logout()">Logout</a></h2>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+<div class="g row">
+<img class="he"src="assets/about.jpg" width="100%">
+<h3 class=" h text-center"><b>A JOURNEY THAT STARTED WITH A SINGLE BOOK</b></h3>
+</div><br>
+<div class="container ">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center"><b>OPEN SHOP - A Constant Innovator</b></h1><hr>
+      <h3>In 2007, we started the journey by selling books online. But now, over a decade later, our story is quite different. Today, OPEN-SHOP is India’s largest online marketplace and one of India’s leading technology powerhouses that is disrupting the way India shops online. What has got us here? The dynamic, passionate and talented folks we call Opensters!</h3>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center"><b>Our Milestones</b></h1><hr>
+      <div class="row j">
+        <div class="col-4">
+          <img src="assets/1.jpg"><br><br>
+          <h2 class="text-center">Great Offers</h2>
+        </div>
+        <div class="col-4">
+          <img src="assets/2.jpg"><br><br>
+          <h2 class="text-center">Exclusive-Items</h2>
+        </div>
+        <div class="col-4">
+          <img src="assets/3.jpg"><br><br>
+          <h2 class="text-center">Easy-Delivery</h2>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><hr>
+  <div class="row j">
+    <div class="col-6">
+      <br><br><br>
+      <h1 class="text-center"><b>Our Core Values</b></h1>
+      <h4>While we adapt, evolve, and continue to grow, the beliefs that are most important to us stay the same - Audacity, Bias for Action, and Customer First - our core values which are reflected in everything we do! While these core values define our identity and form the basis of all our decisions and actions, integrity and inclusion underpins all our processes.</h4>
+    </div>
+    <div class="col-6">
+      <img src="assets/3.jpg">
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer class="text-center">
+  <p>Rahul Banerjee<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>

@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <img class="im" src="assets/shop.jpg" width="40px" height="40px">
+  <h1 class="mx-2"><a class="navbar-brand" ><b>OPEN-SHOP</b></a></h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-5">
+      <li class="nav-item">
+        <h2><a class="nav-link" (click)="gotocart()">Cart</a></h2>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+<div class="content">
+  <div class="sidepanel">
+    <div class="sidenav">
+      <img class ="t" src="assets/shop.jpg"height="100px"width="100px">
+      <button (click)="home()" class="btn btn-outline-dark">Home </button>
+      <button (click)="gotoproducts()" class="btn btn-outline-dark">Products</button>
+      <button (click)="home()" class="btn btn-outline-dark">About Us</button>
+      <button (click)="logout()" class="btn btn-outline-dark">Log Out</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 g text-center">
+        <h1 ><b>Your Subtotal is : {{total | currency:'INR':true}}</b></h1>
+        <form class="contact-form" (ngSubmit)="sendEmail($event)">
+            <input [hidden]="true" type="text" name="user_name"[(ngModel)]="name">
+            <input [hidden]="true" type="email" name="user_email"[(ngModel)]="email">
+            <textarea [hidden]=true name="message"[(ngModel)]="message"></textarea>
+            <input  type="submit"class="btn btn-dark" value="Pay"id="ver">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<div class="footer text-center">
+  <p>Rahul Banerjee<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</div>

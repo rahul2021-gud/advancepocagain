@@ -1,0 +1,91 @@
+
+.navbar{
+    height: 100px;
+    background-image: linear-gradient(to right, #ff5722, #ff9800);
+    border-bottom: solid 3px;
+}
+.im{
+    width: 150px;
+    height: 80px;
+    border: solid 2px;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+  
+.content{
+    display: flex;
+
+}
+
+.sidepanel{
+    position: static;
+    width:12%;
+    height:79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.sidenav{
+    margin-bottom:100px ;
+    height:79vh;
+    width: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.btn-outline-dark{
+   margin:20px;
+   border:1px solid white;
+   width: max-content;
+}
+.t{
+    border-radius: 50%;
+    border: solid 3px;
+}
+.main{
+    height: max-content;
+    width: 100%;
+   
+}
+#products{
+    display: flex;
+    align-items: center;
+    height: max-content;
+    flex-wrap:wrap;
+    width: 100%;
+    margin-top:20px;
+    margin-left:40px;
+}
+
+.example-card {
+    width: 270px;
+    height: max-content;
+    margin:10px;
+    height:360px;
+    background-image: linear-gradient(to right, #87cff0, #c9e5f5);
+    box-sizing: border-box;
+    box-shadow:1px 5px 6px 3px;
+}
+.example-card img{
+    height:150px;
+    width:150px;
+    margin-left: 50px;
+    margin-top:10px;
+}
+.forms{
+    display: flex;
+    color:chocolate;
+}
+.mains{
+    margin:0px 0px 0px 10px;
+   
+   
+}
+.footer {
+    display: block;
+    background-image: linear-gradient(to right, #ff5722, #ff9800);
+    border-top: solid 3px;
+}

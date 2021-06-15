@@ -1,0 +1,81 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <img class="im" src="assets/shop.jpg" width="40px" height="40px">
+  <h1 class="mx-2"><a class="navbar-brand" ><b>OPEN-SHOP</b></a></h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-5">
+      <li class="nav-item">
+        <h2><a class="nav-link" (click)="gotocheckout()">Cart</a></h2>
+      </li>
+      <li class="nav-item my-2 ">
+        <mat-icon *ngIf="number" matBadge="{{no}}" matBadgeColor="warn"></mat-icon><img (click)="gotocheckout()" src="https://image.flaticon.com/icons/png/128/726/726496.png"height="30px"width="30px">
+      </li>
+    </ul>
+  </div>
+  <div class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"[(ngModel)]="search">
+    <button (click)="searched()" class="btn btn-outline-success" type="submit">Search</button>
+  </div>
+</nav>
+
+<body>
+<div class="content">
+  <div class="sidepanel">
+    <div class="sidenav">
+     <img class ="t" src="assets/shop.jpg"height="100px"width="100px">
+     <button (click)="home()" class="btn btn-outline-dark">Home </button>
+     <button (click)="gotoproducts()" class="btn btn-outline-dark">Products</button>
+     <button (click)="home()" class="btn btn-outline-dark">About Us</button>
+     <button (click)="logout()" class="btn btn-outline-dark">Log Out</button>
+    </div>
+  </div>
+  <div  class="main">
+    <div class="forms">
+      <form class="mains">
+        <mat-form-field appearance="fill">
+          <mat-label>{{choosen2}}</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-option (click)="all()">All</mat-option>
+            <mat-option (click)="electronics()">Electronics</mat-option>
+            <mat-option (click)='clothing()'>Clothing</mat-option>
+            <mat-option (click)='footwear()'>Footwear</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+      <form class="mains">
+        <mat-form-field appearance="fill">
+          <mat-label>{{choosen1}}</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-option (click)="none()">none</mat-option>
+            <mat-option (click)="lowtohigh()">Price:Low to high</mat-option>
+            <mat-option (click)="hightolow()">Price:high to low</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+    <hr>
+    <div id="products">
+      <div *ngFor="let item of alllist,let i=index">
+        <mat-card class="example-card">
+          <img mat-card-image src="{{item.img}}"height="100px"alt="">
+          <mat-card-content>
+            <h3 class="text-center">{{item.name}}</h3>
+            <h3 class="text-center">{{item.price | currency:'INR':true}}</h3>
+          </mat-card-content>
+          <mat-card-actions class="text-center">
+            <button (click)="Addtocart(item.id,item)" mat-raised-button color="primary">Add to cart</button>
+          </mat-card-actions>
+        </mat-card>&nbsp;&nbsp;
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer text-center">
+  <p>Rahul Banerjee<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</div>
+</body>

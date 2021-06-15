@@ -1,0 +1,65 @@
+body{
+    background-image: linear-gradient(to right, #def1ee, #bff5f7);
+
+}
+.navbar{
+    height: 100px;
+    background-image: linear-gradient(to right, #ff5722, #ff9800);
+    border-bottom: solid 3px;
+}
+.im{
+    width: 150px;
+    height: 80px;
+    border: solid 2px;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+.content{
+    display: flex;
+}
+.sidepanel{
+   position: static;
+   width:12%;
+    height:79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.btn-outline-dark{
+    margin:20px;
+    border:1px solid white;
+    width:max-content;
+}
+.sidenav{
+    margin-bottom:100px ;
+    height:79vh;
+    width: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.t{
+    border-radius: 50%;
+    border: solid 3px;
+}
+
+.g{
+    margin-top: 10em;
+}
+form{
+    margin-top: 10px;
+    margin-left: 100px;
+    height: 50px;
+}
+#ver{
+    width: 6em;
+}
+.footer {
+    display: block;
+    background-image: linear-gradient(to right, #ff5722, #ff9800);
+    border-top: solid 3px;
+}
+

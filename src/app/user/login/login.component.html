@@ -1,0 +1,45 @@
+<body>
+    <div  class="container">
+        <div class="row">
+            <div class="col-md-10 offset=md-1">
+                <div class="row">
+                    <div class="col-md-6 login-left">
+                        <img  src="assets/shop.jpg" height="400px" width="400px">
+                        <h3>Join Us</h3>
+                        <h3>Register with us to enjoy the great deals..!</h3>
+                        <h3>Read About Us..</h3>
+                        <button type="button" (click)="aboutus()" class="btn btn-primary">About Us</button>
+                    </div>
+                        
+                    
+                    <div class=" mt-5 h col-md-6">
+                        <div  class=" login-right">
+                            <div class="guest-form-card card">
+                                <div class="card-header bg-warning text-center">
+                                    <h2>Sign In Here</h2>
+                                </div>
+                                <div class="card-body bg-warning">
+                                    <form [formGroup]="login"(ngSubmit)="loggin()">
+                                        <div class="form-group">
+                                            <label for="Email">Email</label><br>
+                                            <input type="email"id="Email"formControlName="email"class="form-control"><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Password">Password</label><br>
+                                            <input type="password"id="Password"formControlName="password"class="form-control">
+                                        </div><br>
+                                        <div class="form-group text-center">
+                                            <button type="submit" class="btn btn-danger">Login</button>&nbsp;&nbsp;&nbsp;
+                                            <button (click)="register()" class="btn btn-danger">sign up</button><br>
+                                            <span *ngIf="isvalid">please enter valid credentials</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

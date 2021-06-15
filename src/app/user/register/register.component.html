@@ -1,0 +1,114 @@
+<body>
+    <div  class="container">
+        <div class="row">
+            <div class="col-md-10 offset=md-1">
+                <div class="row">
+                    <div class="col-md-6 register-left">
+                        <img src="assets/shop.jpg" height="400px" width="400px">
+                        <h3>Join Us</h3>
+                        <h3>Register with us to enjoy the great deals..!</h3>
+                        <h3>Read About Us..</h3>
+                        <button type="button" (click)="aboutus()" class="btn btn-primary">About Us</button>
+                    </div>
+                    
+                    
+                    <div *ngIf="regiform" class=" mt-4 col-md-6">
+                    <div  class=" register-right">
+                        <div class="guest-form-card card">
+                            <div class="card-header bg-warning text-center">
+                                <h2>Sign Up Here</h2>
+                            </div>  
+                            <div class="card-body h bg-warning">
+                                <form [formGroup]="register">
+                                    <div class="form-row ">
+                                        <div class="form-group col">
+                                            <label for="name">Your Name</label><br>
+                                            <input type="text"formControlName="name"class="form-control">
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="Email">Email</label><br>
+                                            <input type="email"formControlName="email"class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col">
+                                            <label for="Id">ID</label><br>
+                                            <input type="number"formControlName="Id"class="form-control">
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="Password">Password</label><br>
+                                            <input type="password"formControlName="password"class="form-control">
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="name">Confirm Password</label><br>
+                                            <input type="password"formControlName="cpassword" class="form-control">
+                                        </div>
+                                    </div><br>
+                                    <div class="form-row">
+                                        <div class="form-group col text-center">
+                                            <button type="submit" (click)="registeruser()"[disabled]="!register.valid" class="btn btn-danger"id="dark1">create your account</button>
+                                            &nbsp;&nbsp;&nbsp;<button (click)="gotologin()" class="btn btn-outline-secondary">Log in</button>
+                                            <hr>
+                                            <span>*By creating an account,you agree to our<br>
+                                            <a href="#">Terms and conditions</a> and <a href="#"id="a2">Privacy policy</a></span>
+                                            <p *ngIf="incorrect"id="incorr">Passwords doesn't match</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+
+                    
+
+
+
+                    <div *ngIf="!regiform" class="mt-5 col-md-6">
+                    <div  class="register-right">
+                        <div class="guest-form-card card">
+                            <div class="card-header bg-warning text-center">
+                                <h2>OTP verification</h2>
+                            </div>  
+                            <div class="card-body bg-warning">
+                                <form (ngSubmit)="sendEmail($event)" class="my-3">
+                                    <input [hidden]="true" type="text" name="user_name"[(ngModel)]="name">
+                                    <label class="form-label my-0">Email</label>
+                                    <input class="form-control" type="email"  name="user_email"[(ngModel)]="email">
+                                    <textarea [hidden]="true" name="message"[(ngModel)]="otp"></textarea><br>
+                                    <button type="submit" class="btn btn-danger btn-md px-4 mr-3 ">Send OTP</button>
+                                </form>
+                                <form>
+                                    <input class="form-control" type="number" placeholder="Enter OTP" name="otp" [(ngModel)]="verifyotp"><br>
+                                    <button class="btn btn-danger btn-md px-4 mr-3" (click)="verification()">Verify</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

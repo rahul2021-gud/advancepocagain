@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(to right, #ff5722, #ff9800);
+
+}
+.login-left{
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+.login-left img{
+    border-radius: 50%;
+    border: solid 1px;
+
+}
+.login-left .btn-primary{
+    border-radius: 1.5rem;
+    border:none;
+    width: 120px;
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.h label{
+    font-weight: 30em;    
+    font-size: large;
+}
